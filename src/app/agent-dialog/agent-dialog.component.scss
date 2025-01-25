@@ -1,0 +1,72 @@
+.dialog-container{
+
+    width:auto;
+    height: auto;
+}
+
+.dialog-title{
+    color:#fd4556;
+    background-color: #0F1822;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    border-color: #0F1822;
+}
+
+.agent-content{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #0F1822 0%, #0F1822 0.01%, #fd4556  100%);
+}
+
+mat-form-field, mat-label, .radio-text{
+    color:whitesmoke;
+    font-family: "FF Mark W05", Arial, sans-serif;
+}
+
+.mat-accent.mat-mdc-radio-button {
+    --mdc-radio-selected-focus-icon-color: #0F1822;
+    --mdc-radio-selected-hover-icon-color: #0F1822;
+    --mdc-radio-selected-icon-color: #0F1822;
+    --mdc-radio-selected-pressed-icon-color: #0F1822;
+    --mat-radio-checked-ripple-color: #0F1822;
+}
+
+.action{
+    padding:20px 25px 20px;
+    button{
+        flex:1;   
+    }
+
+    background-color: #fd4556;
+}
+
+.form-row{
+    display: flex;
+    gap:10px;
+    padding-top: 20px;
+    
+}
+
+mat-form-field{
+    width:100%; //all form fields take 100% space
+}
+
+
+.mat-mdc-raised-button:not(:disabled).cancel {
+    color: #0F1822;
+    background-color: #fd4556;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mat-mdc-raised-button:not(:disabled).save {
+    color: #fd4556;
+    background-color: #0F1822;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+::placeholder input{
+    color: whitesmoke;
+}

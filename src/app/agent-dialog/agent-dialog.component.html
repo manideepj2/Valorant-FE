@@ -1,0 +1,81 @@
+<div class="dialog-container">
+    <div mat-dialog-title class="dialog-title">
+        <h4>AGENT DETAILS FORM</h4>
+    </div>
+    <form [formGroup]="agentForm" (ngSubmit)="onSave()">
+        <div mat-dialog-content class="agent-content">
+            <div class= "form-row">
+                <mat-form-field hintLabel="Enter number only" appearance="outline">
+                    <mat-label>Enter ID</mat-label>
+                    <input matInput type="number" style="color: whitesmoke;" formControlName="id">
+                    <mat-hint align="end">Ex: 123</mat-hint>
+                </mat-form-field>
+                <mat-form-field hintLabel="Max 30 characters" appearance="outline">
+                    <mat-label>Enter Name</mat-label>
+                    <input matInput #name maxlength="30" style="color: whitesmoke;" placeholder="Ex: John" formControlName="name">
+                    <mat-hint align="end">{{name.value.length}}/30</mat-hint>
+                </mat-form-field>
+            </div>
+            <div class= "form-row">
+                <mat-form-field hintLabel="Max 10 characters" appearance="outline">
+                    <mat-label>Enter Codename</mat-label>
+                    <input matInput #codename style="color: whitesmoke;" maxlength="10" placeholder="Ex: Hitman" formControlName="codeName">
+                    <mat-hint align="end">{{codename.value.length}}/30</mat-hint>
+                </mat-form-field>
+                <mat-form-field hintLabel="Max 10 characters" appearance="outline">
+                    <mat-label>Enter Country</mat-label>
+                    <input matInput #country maxlength="10" style="color: whitesmoke;" placeholder="" formControlName="country">
+                    <mat-hint align="end">{{country.value.length}}/10</mat-hint>
+                </mat-form-field>
+            </div>
+            <div class= "form-row">
+                <mat-form-field hintLabel="Max 10 characters" appearance="outline">
+                    <mat-label>Enter ability 1</mat-label>
+                    <input matInput #a1 maxlength="10" style="color: whitesmoke;" placeholder="" formControlName="ability1">
+                    <mat-hint align="end">{{a1.value.length}}/10</mat-hint>
+                </mat-form-field>
+                <mat-form-field hintLabel="Max 10 characters" appearance="outline">
+                    <mat-label>Enter ability 2</mat-label>
+                    <input matInput #a2 maxlength="10" style="color: whitesmoke;" placeholder="" formControlName="ability2">
+                    <mat-hint align="end">{{a2.value.length}}/10</mat-hint>
+                </mat-form-field>
+            </div>
+            <div class= "form-row">
+                <mat-form-field hintLabel="Max 10 characters" appearance="outline">
+                    <mat-label>Enter ability 3</mat-label>
+                    <input matInput #a3 maxlength="10" style="color: whitesmoke;" placeholder="" formControlName="ability3">
+                    <mat-hint align="end">{{a3.value.length}}/10</mat-hint>
+                </mat-form-field>
+                <mat-form-field hintLabel="Max 10 characters" appearance="outline">
+                    <mat-label>Enter Ultimate</mat-label>
+                    <input matInput #ult maxlength="10" style="color: whitesmoke;" placeholder="" formControlName="ultimate">
+                    <mat-hint align="end">{{ult.value.length}}/10</mat-hint>
+                </mat-form-field>
+            </div>
+            <div class= "form-row">
+                <mat-radio-group aria-label="Select role of agent" formControlName="role">
+                    <mat-label><b>Select role</b></mat-label>
+                    <mat-radio-button value="1" ><a class="radio-text">Duelist</a></mat-radio-button>
+                    <mat-radio-button value="2" ><a class="radio-text">Initiator</a></mat-radio-button>
+                    <mat-radio-button value="3" ><a class="radio-text">Sentinel</a></mat-radio-button>
+                    <mat-radio-button value="4" ><a class="radio-text">Controller</a></mat-radio-button>
+                  </mat-radio-group>
+            </div>
+            <div class="form-row">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Enter Description</mat-label>
+                    <textarea matInput placeholder="Ex. It makes me feel..." formControlName="description" style="color: whitesmoke;"></textarea>
+                </mat-form-field>
+            </div>
+        </div>
+        <div mat-dialog-actions class="action">
+                <button mat-raised-button class="cancel" (click)="onCancel()">
+                    CANCEL
+                </button>
+                <button mat-raised-button class="save" type="submit">
+                    SAVE
+                </button>
+        </div>
+
+    </form> 
+</div>
