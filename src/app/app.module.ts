@@ -12,11 +12,13 @@ import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule} from '@angular/material/input';
 import { MatRadioModule} from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AgentDialogComponent
+    AgentDialogComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
