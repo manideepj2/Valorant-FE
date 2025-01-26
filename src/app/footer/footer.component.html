@@ -7,14 +7,16 @@
                     (focus)="onMouseOver('giticon',$event)"
                     (blur)="onMouseLeave('giticon',$event)" id="giticon" href="https://github.com/manideepj2" target='_blank'>
                     <i *ngIf="!gitIsHovered" class="fa-brands fa-github"></i>
-                    <i *ngIf="gitIsHovered" class="fa-brands fa-github fa-bounce"></i> github.com/manideepj2</a>
+                    <i *ngIf="gitIsHovered" class="fa-brands fa-github fa-bounce"></i> github.com/manideepj2
+                </a>
             </li>
             <li><a (mouseover)="onMouseOver('emailicon',$event)"
                     (mouseleave)="onMouseLeave('emailicon',$event)"
                     (focus)="onMouseOver('emailicon',$event)" 
                     (blur)="onMouseLeave('emailicon',$event)" id="emailicon" href="mailto:manideepj2@gmail.com">
                     <i *ngIf="!emailIsHovered" class="fa-solid fa-envelope" style="color: #f9f9f9;"></i>
-                    <i *ngIf="emailIsHovered" class="fa-solid fa-envelope fa-bounce" style="color: #f9f9f9;"></i> Contact me!</a>
+                    <i *ngIf="emailIsHovered" class="fa-solid fa-envelope fa-bounce" style="color: #f9f9f9;"></i> Contact me!
+                </a>
             </li>
         </ul>
         <span id="text">© 2024 Manideep's Custom Valorant Project</span>
