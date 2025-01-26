@@ -31,8 +31,8 @@
   left:0.2%;
 }
 
-.mat-mdc-raised-button:not(:disabled){
-    color:#fd4556;
-    background:  linear-gradient(180deg, #0F1822 0%, #0b1118 0.01%, #0f182286  100%);
+.mat-mdc-unelevated-button:not(:disabled) {
+  background-color: #0F1822;
+  color:#fd4556
 }
 
