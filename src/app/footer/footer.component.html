@@ -1,9 +1,15 @@
 <footer>
     <div class="footer-elements">
         <ul>
-            <li><a>1st link</a></li>
-            <li><a>2nd link</a></li>
-            <li><a>2nd link</a></li>
+            <li>
+                <a id="giticon" href="https://github.com/manideepj2" target='_blank'>
+                    <i *ngIf="!gitIsHovered" class="fa-brands fa-github" style="color: #4c3370;"></i>
+                    <i *ngIf="gitIsHovered" class="fa-brands fa-github fa-bounce" style="color: #4c3370;"></i> github.com/manideepj2</a>
+            </li>
+            <li><a id="emailicon" href="mailto:manideepj2@gmail.com">
+                    <i *ngIf="!emailIsHovered"class="fa-solid fa-envelope" style="color: #0d2349;"></i>
+                    <i *ngIf="emailIsHovered"class="fa-solid fa-envelope fa-bounce" style="color: #0d2349;"></i> Contact me!</a>
+            </li>
         </ul>
         <span id="text">© 2024 Manideep's Custom Valorant Project</span>
     </div>
