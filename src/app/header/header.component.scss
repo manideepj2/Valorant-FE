@@ -1,9 +1,5 @@
-.example-spacer {
-    flex: 1 1 auto;
-  }
-  
 .navbar {
-    background: #fd4556;
+    background: rgb(15, 25, 35);
     color: #0F1822;
     height: 80px;
     font-family: "FF Mark W05", Arial, sans-serif;
@@ -25,7 +21,15 @@
 .add-agent{
     font-family: "FF Mark W05", Arial, sans-serif;
     font-weight:bold;
+    position:absolute;
+    right: 1%;
  }
+
+.label{
+  color:#fd4556;
+  position: relative;
+  left:0.2%;
+}
 
 .mat-mdc-raised-button:not(:disabled){
     color:#fd4556;
