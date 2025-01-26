@@ -1,8 +1,8 @@
 
 #text{
     text-align: center;
-    position: relative;
-    right:0rem;
+    position: absolute;
+    right:2rem;
     color: #f9f9f9;
     font-weight: bold;
     font-size: 80%;
@@ -41,14 +41,12 @@ footer {
     right:0;
     left:0;
     text-align: center;
-    position: fixed;
-    overflow:visible;
+    position: absolute;
 }
 
 .footer-elements{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
