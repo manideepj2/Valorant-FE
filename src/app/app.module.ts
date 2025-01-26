@@ -14,13 +14,15 @@ import { MatRadioModule} from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AgentsContainerComponent } from './agents-container/agents-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AgentDialogComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AgentsContainerComponent
   ],
   imports: [
     BrowserModule,
