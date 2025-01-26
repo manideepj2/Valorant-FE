@@ -5,11 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
+
 export class FooterComponent {
+
   gitIsHovered: boolean = false;
   emailIsHovered: boolean = false;
-  giticon: HTMLElement | null = null;
-  emailicon: HTMLElement | null = null;
 
   constructor() { 
     console.log('git hovered status:', this.gitIsHovered);
@@ -17,31 +17,31 @@ export class FooterComponent {
   }
   
   ngOnInit() {
-    this.giticon = document.getElementById('giticon');
-    this.emailicon = document.getElementById('emailicon');
+  }
 
-    if (this.giticon) {
-      this.giticon.addEventListener('mouseover', () => {
-        this.gitIsHovered = true;
-        console.log('Git hover status:', this.gitIsHovered);
-      });
-
-      this.giticon.addEventListener('mouseleave', () => {
-        this.gitIsHovered = false;
-        console.log('Git hover status:', this.gitIsHovered);
-      });
+  onMouseOver(id: string,event: Event) {
+    console.log('event type:', event);
+    
+    if (id && id=='giticon'){
+      this.gitIsHovered = true;
+      console.log('git hovered status:', this.gitIsHovered);
     }
+    if (id && id=='emailicon'){
+      this.emailIsHovered = true;
+      console.log('email hovered status:', this.emailIsHovered);
+    }
+  }
 
-    if (this.emailicon) {
-      this.emailicon.addEventListener('mouseover', () => {
-        this.emailIsHovered = true;
-        console.log('Email hover status:', this.emailIsHovered);
-      });
+  onMouseLeave(id:string, event: Event) {
+    console.log('event type:', event);
 
-      this.emailicon.addEventListener('mouseleave', () => {
-        this.emailIsHovered = false;
-        console.log('Email hover status:', this.emailIsHovered);
-      });
+    if(id && id=='giticon'){
+      this.gitIsHovered = false;
+      console.log('git hovered status:', this.gitIsHovered);
+    }
+    if(id && id=='emailicon'){
+      this.emailIsHovered = false;
+      console.log('email hovered status:', this.emailIsHovered);
     }
   }
 }

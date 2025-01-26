@@ -3,7 +3,7 @@
     text-align: center;
     position: relative;
     right:0rem;
-    color:rgba(19, 18, 18, 0.651);
+    color: #f9f9f9;
     font-weight: bold;
     font-size: 14px;
     flex-direction: column;
@@ -21,7 +21,7 @@ ul {
 ul>li>a{
     text-decoration: none;
     font-size: 20px;
-    color:black;
+    color:#f9f9f9;
     padding-left: 10px;
 }
 
@@ -35,7 +35,7 @@ ul>li{
 
 
 footer {
-    background-color: rgb(226, 221, 221);
+    background-color: rgb(15, 25, 35);
     padding: 20px;
     bottom:0;
     right:0;
