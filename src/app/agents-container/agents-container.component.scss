@@ -1,17 +1,67 @@
-.text{
-    left : 1.5%;
-    font-size: 100%;
-    // padding-top: 15%;
+#text{
+    font-size: 100px;
+    font-family: 'Tungsten', sans-serif;
+    color:rgb(236, 232, 225);
+    margin-bottom:0;
 }
 
-.agent-container{
-    height: 10%;
-    width:100%;
-    display: flex;
+@font-face {  //tungsten is not provided by default in browsers, you need to install the ttf file
+    font-family: "Tungsten";
+    src: url("/assets/tungsten-bold.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: bold; /* Optional, but helps categorize font styles */
+    font-style: normal; /* Optional, for normal or italic styles */
+}
+
+.agent-text-container{
+    height:fit-content;
+    width:fit-content;
+    font-size: 150px;
+    margin-left:40px;
+    display:flex;
+    align-items: center;
+    position:relative;
+}
+
+.main-content{
+    display:flex;
     flex-direction: column;
     align-items: center;
+    width:100%;
+    top:0;
+    height:max-content; /* Let the content define height */
+    position:relative;
+    box-sizing:border-box;
+    //border:2px solid blue;
+    flex-grow:1;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+.agents-header-container{
+    background-image: url('/assets/valorant-background.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+    position:relative;
+    display:flex;
+    // justify-content: center;
     padding-top: 80px;
-    margin-top: 80px;
-    font-size: 150px;
-    align-items: left;
+    padding-bottom: 80px;
+}
+
+.agents-container {
+    background-color: antiquewhite;
+    width: 100%;
+    padding: 20px;
+    // border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap if they don’t fit in one row */
+    flex-grow: 1; /* Allow the container to grow and take up available space */
+    height: auto; /* Let the content define height */
+    box-sizing: border-box;
+    position: relative; /* Avoid overlapping */
+    //98border:2px solid yellowgreen;
 }

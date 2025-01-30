@@ -15,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AgentsContainerComponent } from './agents-container/agents-container.component';
+import { AgentCardComponent } from './agent-card/agent-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AgentsContainerComponent } from './agents-container/agents-container.co
     AgentDialogComponent,
     HeaderComponent,
     FooterComponent,
-    AgentsContainerComponent
+    AgentsContainerComponent,
+    AgentCardComponent
   ],
   imports: [
     BrowserModule,

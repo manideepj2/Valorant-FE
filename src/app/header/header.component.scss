@@ -5,13 +5,13 @@
     font-family: "FF Mark W05", Arial, sans-serif;
     font-size: 22px;
     font-weight: bold;
-    position:absolute;
+    display: flex;
   }
 
 .larger-button{
     width: 60px; /* Increase button width */
     height: 60px; /* Increase button height */
-    }
+  }
 
 .logo{
    width: 100%; 
